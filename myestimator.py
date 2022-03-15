@@ -3,6 +3,7 @@ from myinterval import *
 import numpy as np
 from vibes import vibes
 
+
 def f(x: Box) -> Box:
     tmp = Box()
     t = [0.2, 1, 2, 4]
@@ -42,7 +43,6 @@ if __name__ == '__main__':
 
     vibes.beginDrawing()
     vibes.newFigure('estimator')
-    vibes.setFigureSize(1000, 700)
+    vibes.setFigureSize(1000, 500)
     sivia(f, Y, initBox, 0.01, 1)
     vibes.endDrawing()
-
