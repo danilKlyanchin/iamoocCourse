@@ -59,7 +59,7 @@ def calculate_R1_R2(P, I, U1, U2, E):
 
 
 if __name__ == '__main__':
-    # Equestions that were used
+    # Equations that were used
     # P = I * U, U = U1 + U2 - E
     # U1 = I * R1
     # U2 = I * R2

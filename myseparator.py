@@ -98,23 +98,26 @@ if __name__ == '__main__':
     a1, b1 = separator_s(x, y, c1, r1)
     a2, b2 = separator_s(x, y, c2, r2)
 
+    # question 1
     # Separator S
-    print('An example of separator for S1')
-    print('in', a1)
-    print('out', b1)
+    # print('An example of separator for S1')
+    # print('in', a1)
+    # print('out', b1)
 
+    # question 2
     # Intersection
-    vibes.beginDrawing()
-    vibes.newFigure('Intersection S1 and S2')
-    vibes.setFigureSize(1000, 500)
-    sivia(f=f12, Y=Box(r1.sqr(), r2.sqr()), initBox=Box(x, y), eps=0.01, q=2)
-    # Separator for intersection of S1 and S2
-    inter_box_S_inner, inter_box_S_outer = separator_s_intersection(x, y, c1, c2, r1, r2)
-    print('Separator of intersection S1 and S2')
-    print('in', inter_box_S_inner)
-    print('out', inter_box_S_outer)
-    vibes.endDrawing()
+    # vibes.beginDrawing()
+    # vibes.newFigure('Intersection S1 and S2')
+    # vibes.setFigureSize(1000, 500)
+    # sivia(f=f12, Y=Box(r1.sqr(), r2.sqr()), initBox=Box(x, y), eps=0.01, q=2)
+    # # Separator for intersection of S1 and S2
+    # inter_box_S_inner, inter_box_S_outer = separator_s_intersection(x, y, c1, c2, r1, r2)
+    # print('Separator of intersection S1 and S2')
+    # print('in', inter_box_S_inner)
+    # print('out', inter_box_S_outer)
+    # vibes.endDrawing()
 
+    # question 3
     # Union
     vibes.beginDrawing()
     vibes.newFigure('Union S1 and S2')
