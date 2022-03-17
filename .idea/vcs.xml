@@ -2,5 +2,8 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ibex-geometry-master/ibex-lib" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ibex-lib" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/pyIbex" vcs="Git" />
   </component>
 </project>

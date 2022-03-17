@@ -18,15 +18,15 @@ class myCtc(Ctc):
         bwd_sub(a, x, cx)
         bwd_sub(b, y, cy)
 
-# question 1
-# vibes.beginDrawing()
-# vibes.newFigure('ring with pyibex')
-# vibes.setFigureSize(1000, 500)
-#
-# X0 = IntervalVector(2, [-10, 10])
-# ctc = myCtc()
-# pyibex.pySIVIA(X0, ctc, 0.5)
 
+# question 1
+vibes.beginDrawing()
+vibes.newFigure('ring with pyibex')
+vibes.setFigureSize(1000, 500)
+
+X0 = IntervalVector(2, [-10, 10])
+ctc = myCtc()
+pyibex.pySIVIA(X0, ctc, 0.5)
 
 # question 2
 # vibes.beginDrawing()
@@ -41,22 +41,21 @@ class myCtc(Ctc):
 
 
 # # question 3
-vibes.beginDrawing()
-vibes.newFigure('ring with pyibex')
-vibes.setFigureSize(1000, 500)
-X0 = IntervalVector([[-10, 10], [-10, 10]])
-
-r1 = Interval(4, 5)
-f1 = Function("x[2]", "(x[0]-1)^2 + (x[1]-2)^2")
-sep1 = SepFwdBwd(f1, sqr(r1))
-
-r2 = Interval(5, 6)
-f2 = Function("x[2]", "(x[0]-2)^2 + (x[1]-5)^2")
-sep2 = SepFwdBwd(f2, sqr(r2))
-
-sep = sep1 | sep2
-pyibex.pySIVIA(X0, sep, 0.1)
-
+# vibes.beginDrawing()
+# vibes.newFigure('ring with pyibex')
+# vibes.setFigureSize(1000, 500)
+# X0 = IntervalVector([[-10, 10], [-10, 10]])
+#
+# r1 = Interval(4, 5)
+# f1 = Function("x[2]", "(x[0]-1)^2 + (x[1]-2)^2")
+# sep1 = SepFwdBwd(f1, sqr(r1))
+#
+# r2 = Interval(5, 6)
+# f2 = Function("x[2]", "(x[0]-2)^2 + (x[1]-5)^2")
+# sep2 = SepFwdBwd(f2, sqr(r2))
+#
+# sep = sep1 & sep2
+# pyibex.pySIVIA(X0, sep, 0.1)
 
 # question 4
 # vibes.beginDrawing()
@@ -74,4 +73,3 @@ pyibex.pySIVIA(X0, sep, 0.1)
 #
 # sep = sep1 | sep2
 # pyibex.pySIVIA(X0, sep, 0.1)
-
